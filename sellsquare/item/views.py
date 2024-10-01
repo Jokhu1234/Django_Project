@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 
 from .models import Item
@@ -11,5 +12,7 @@ def detail(request, pk):
         'related_items': related_items
         })
     
+    
+@login_required
 def new(request):
     
