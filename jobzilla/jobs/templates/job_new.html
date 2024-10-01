@@ -1,0 +1,27 @@
+{% extends "masterpage.html" %} {% block title%} Jobzila Home{% endblock title%}
+{% block maincontent %}
+<section id="login-form-section">
+  
+  <h2>Create Job</h2>
+      <div class="form-div">
+
+        <form   id="contact-form" action="{% url 'jobs:new-job'%}" method="POST" enctype="multipart/form-data">
+
+          {% csrf_token %}
+
+          {{form}}        
+          <button>Add Job</button>
+
+</form>
+
+
+
+        </div>
+
+       
+            
+
+      
+    </div>
+  </section>
+{% endblock %}

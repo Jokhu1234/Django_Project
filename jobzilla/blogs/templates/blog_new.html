@@ -1,0 +1,32 @@
+{% extends "masterpage.html" %} {% block title%} Jobzilla Home{% endblock title%}
+{% block maincontent %}
+<section id="joblist-section">
+    <h2>{{ blog.title }}</h2>
+    
+
+    <div class="joblisting-div">
+
+      
+        <div class="job-listing">
+        <h2>New Blog</h2>   
+
+        <form action="{% url 'blogs:new-blog'%}" method="POST" enctype="multipart/form-data">
+
+          {% csrf_token %}
+
+          {{form}}        
+          <button>Add Blog</button>
+
+</form>
+
+
+
+        </div>
+
+       
+            
+
+      
+    </div>
+  </section>
+{% endblock %}

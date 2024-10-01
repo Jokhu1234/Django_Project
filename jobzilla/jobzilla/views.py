@@ -5,8 +5,8 @@ def homepage(request):
     return render(request, "index.html")
 
 
-def joblisting(request):
-    return render(request, "joblisting.html")
+# def joblisting(request):
+#     return render(request, "joblisting.html")
 
 
 def jobsearch(request):

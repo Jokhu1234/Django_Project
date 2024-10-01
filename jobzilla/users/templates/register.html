@@ -1,0 +1,19 @@
+{% extends "masterpage.html" %} 
+{% block maincontent %}
+<section id="contact-form-section">
+ 
+
+  <section>
+    <h2>Register User</h2>
+    <form class="form-with-validation" action="/users/register/" method="POST">
+      {% csrf_token %}
+      {{form}}
+      <button class="form-submit">Submit</button>
+  
+      </form>
+  
+   
+
+  </section>
+</section>
+{% endblock %}

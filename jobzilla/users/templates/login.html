@@ -1,0 +1,44 @@
+{% extends "masterpage.html" %} 
+
+{% block maincontent %}
+
+ 
+
+<section id="login-form-section">
+  
+    <h2>Login Page</h2>
+    <div class="form-div">
+
+    <form class="" id="contact-form" action="/users/login/" method="POST">
+        {% csrf_token %}
+        {{form}}
+        {% if request.GET.next %} 
+        <input type="hidden"  name="next" value="{{ request.GET.next}}">
+        
+        {% endif %}
+        
+        <button class="form-submit">Login</button>
+    
+        </form>
+    
+      </div>
+
+      <section id="contact-form-section">
+ 
+
+        <section>
+          <h2>Create an account</h2>
+          <div class="form-div">
+          <form class="form-with-validation" action="/users/register/" method="POST">
+            {% csrf_token %}
+            {{form}}
+            <button class="form-submit"><a href="{% url 'users:register'%}">Submit</a></button>
+        
+            </form>
+      
+    
+    
+
+  </section>
+
+{% endblock %}
