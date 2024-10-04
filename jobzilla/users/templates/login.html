@@ -20,25 +20,10 @@
         <button class="form-submit">Login</button>
     
         </form>
-    
       </div>
 
-      <section id="contact-form-section">
- 
 
-        <section>
-          <h2>Create an account</h2>
-          <div class="form-div">
-          <form class="form-with-validation" action="/users/register/" method="POST">
-            {% csrf_token %}
-            {{form}}
-            <button class="form-submit"><a href="{% url 'users:register'%}">Submit</a></button>
-        
-            </form>
-      
-    
-    
 
-  </section>
+</section>
 
 {% endblock %}
