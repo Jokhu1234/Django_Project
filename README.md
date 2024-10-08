@@ -1,4 +1,4 @@
-For my Django project submission - sellsquare.  Here are the credentials for the admin interface:
+For my Django project submission - sellsquare.  Here are the credentials for the online marketplace website and the admin interface:
 
 Superuser:
 Username: admin
