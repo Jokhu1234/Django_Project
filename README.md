@@ -7,4 +7,4 @@ Password: Chips@5534
 
 User:
 Username: alyssaj
-Passowrd: Wedding2025
+Password: Wedding2025
